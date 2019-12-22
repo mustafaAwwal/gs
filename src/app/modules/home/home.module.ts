@@ -13,6 +13,7 @@ import { HomePageContactUsComponent } from './components/home-page-contact-us/ho
 import { HomePageFooterComponent } from './components/home-page-footer/home-page-footer.component';
 import { OfferCardComponent } from './components/offer-card/offer-card.component';
 import { FeatureCardComponent } from './components/feature-card/feature-card.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 
@@ -21,7 +22,8 @@ import { FeatureCardComponent } from './components/feature-card/feature-card.com
   imports: [
     CommonModule,
     RouterModule.forChild(HomeRoutes),
-    MaterialModule
+    MaterialModule,
+    ScrollToModule.forRoot()
   ]
 })
 export class HomeModule { }
