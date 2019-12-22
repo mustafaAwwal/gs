@@ -7,11 +7,13 @@ import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routes';
 import { MaterialModule } from './shared/modules/material/material.module';
 import { HeaderComponent } from './shared/components/header/header.component';
+import { SmallHeaderComponent } from './shared/components/header/small-header/small-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SmallHeaderComponent
   ],
   imports: [
     BrowserModule,

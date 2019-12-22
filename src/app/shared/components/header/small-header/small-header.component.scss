@@ -1,0 +1,34 @@
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 100%;
+    .nav-link {
+        color: white;
+        text-align: center;
+        padding: 20px 0px;
+        cursor: pointer;
+    }
+}
+.hidden {
+    transition: 400ms;
+    height: 10px;
+    background-color: transparent;
+    .nav-link {
+        display: none;
+        transition: 400ms;
+    }
+}
+.shown {
+    height: 300px;
+    display: flex;
+    transition: 400ms;
+}
+@media only screen and (min-width:992px) {
+    .flex-container {
+        display: none;
+    }
+}
