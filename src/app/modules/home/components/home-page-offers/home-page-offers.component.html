@@ -1,0 +1,13 @@
+<div class="home-page-container">
+    <div class="content-area">
+        <div class="content">
+            <h1 class="heading">
+              What We Offer  
+            </h1>
+            <div class='after-heading-text'>Our state of the art blockchain solutions is a win-win scenario that ensures proper destruction of waste, high quality recycled products and save companies millions</div>
+            <div class="offer-card-grid">
+                <app-offer-card class='offer-card-item' *ngFor = 'let cardData of offerCardData' [offerCardData]='cardData'></app-offer-card>
+            </div>
+        </div>
+    </div>
+</div>

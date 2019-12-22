@@ -1,0 +1,39 @@
+.home-page-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    .content-area {
+        flex: 0 1 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        
+    }
+}
+.heading {
+    font-size: 3rem;
+}
+.after-heading-text {
+    max-width: 900px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 43px;
+}
+.offer-card-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .offer-card-item {
+        flex: 0 1 31%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .offer-card-item {
+        flex: 0 1 48% !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .offer-card-item {
+        flex: 0 1 100% !important;
+    }
+}
