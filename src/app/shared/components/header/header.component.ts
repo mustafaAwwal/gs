@@ -20,5 +20,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  goToOffers() {
+    console.log(document.getElementById('home-page-about'))
+  }
 }
