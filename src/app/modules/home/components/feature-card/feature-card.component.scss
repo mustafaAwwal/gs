@@ -3,8 +3,8 @@
     flex-flow: column nowrap;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     position: relative;
+    height: 210px;
 }
 .image-area {
     z-index: 104;
@@ -35,4 +35,45 @@
     height: 370px !important;
     width: 370px !important;
     transform: translate(-50%,-50%);
+}
+@media only screen and (max-width:1280px) {
+    .background-image {
+        height: 270px !important;
+        width: 270px !important;    
+        transition: 400ms;
+    }
+    .image-area {
+        margin-bottom: 15px;
+    }
+    .image-wrapper {
+        width: 70px !important;
+        height: 70px !important;
+        transition: 400ms;
+    }
+    .text-area {
+        width: 75%;
+        font-size: 0.97rem;
+    }
+    .card-container {
+        height: 160px;
+    }
+}
+@media only screen and (max-width:992px) {
+    .background-image {
+        height: 370px !important;
+        width: 370px !important;    
+        transition: 400ms;
+    }
+    .image-area {
+        margin-bottom: 30px;
+    }
+    .image-wrapper {
+        width: 100px !important;
+        height: 100px !important;
+        transition: 400ms;
+    }
+    .text-area {
+        width: 60%;
+        font-size: initial;
+    }
 }
