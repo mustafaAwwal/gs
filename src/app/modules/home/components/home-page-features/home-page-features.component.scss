@@ -38,3 +38,10 @@ h1.heading {
         transition: 400ms;
     }
 }
+@media only screen and (max-width: 768px) {
+    .card-item {
+        flex: 0 1 100% !important;
+        margin-bottom: 120px !important;
+        transition: 400ms;
+    }
+}
