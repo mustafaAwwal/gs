@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -17,7 +17,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes),
-    MaterialModule
+    MaterialModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

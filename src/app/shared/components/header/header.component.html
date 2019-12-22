@@ -8,14 +8,14 @@
             </div>
             <div class="links">
                 <div class="left-links">
-                    <div class="link" (click)='goToOffers()'>Solutions</div>
-                    <div class="link">Industry</div>
+                    <div class="link" [ngx-scroll-to]="'#home-page-offers'">Solutions</div>
+                    <div class="link" [ngx-scroll-to]="'#home-page-features'">Industry</div>
                     <div class="link">Explorer</div>
                     <div class="link">Blog</div>
-                    <div class="link">About Us</div>
+                    <div class="link" [ngx-scroll-to]="'#home-page-about'">About Us</div>
                 </div>
                 <div class="right-links">
-                    <button mat-raised-button color='primary' class='contact-us'>Contact Us</button>
+                    <button mat-raised-button color='primary' class='contact-us' type='button' [ngx-scroll-to]="'#home-page-contact-us'">Contact Us</button>
                 </div>
             </div>
         </div>

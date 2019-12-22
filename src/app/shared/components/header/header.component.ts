@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   goToOffers() {
-    console.log(document.getElementById('home-page-about'))
+    let el = document.getElementById('home-page-offers')
+    console.log(el.scrollTop)
   }
 }
