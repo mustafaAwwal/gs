@@ -1,4 +1,4 @@
-<div class="header-container" [ngClass]='scrollChangeClass ? "colored-background":"transparent"'>
+<nav     class="header-container" [ngClass]='scrollChangeClass ? "colored-background":"transparent"'>
     <div class="content-area">
         <div class="content">
             <div class="brand">
@@ -6,20 +6,40 @@
                     <div class="brand-wrapper"><img src="../../../../assets/slicings/header-logo.png" alt=""></div>
                 </div>
             </div>
-            <div class="links">
-                <div class="left-links">
-                    <div class="link" [ngx-scroll-to]="'#home-page-offers'">Solutions</div>
-                    <div class="link" [ngx-scroll-to]="'#home-page-features'">Features</div>
-                    <div class="link">Explorer</div>
-                    <div class="link">Blog</div>
-                    <div class="link" [ngx-scroll-to]="'#home-page-about'">About Us</div>
-                </div>
+            <nav class="links">
+                <ul class="left-links">
+                    <li class="link" >
+                        <a [ngx-scroll-to]="'#home-page-offers'">
+                            Solutions
+                        </a>
+                    </li>
+                    <li class="link" >
+                        <a [ngx-scroll-to]="'#home-page-features'">
+                            Features
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a>
+                            Explorer
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a>
+                            Blog
+                        </a>
+                    </li>
+                    <li class="link" >
+                        <a [ngx-scroll-to]="'#home-page-about'">
+                            About Us
+                        </a>
+                    </li>
+                </ul>
                 <div class="right-links">
                     <button mat-raised-button color='primary' class='contact-us' type='button' [ngx-scroll-to]="'#home-page-contact-us'">Contact Us</button>
                     <div class="burger-wrapper" (click)='smallNav.visibleStateChanger()'><img src="../../../../assets/slicings/header-hamburger white.svg" alt=""></div>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
-</div>
+</nav  >
 <app-small-header #smallNav></app-small-header>

@@ -47,6 +47,9 @@
                     flex-flow: column nowrap;
                     justify-content: center;
                     cursor: pointer;
+                    a {
+                        outline:green;
+                    }
                 }
             }
             .right-links {

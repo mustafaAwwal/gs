@@ -1,8 +1,32 @@
-<div class="flex-container" [ngClass]='visibleState ? "shown":"hidden"'>
-    <div class="nav-link" [ngx-scroll-to]="'#home-page-offers'">Solutions</div>
-    <div class="nav-link" [ngx-scroll-to]="'#home-page-features'">Features</div>
-    <div class="nav-link">Explorer</div>
-    <div class="nav-link">Blog</div>
-    <div class="nav-link" [ngx-scroll-to]="'#home-page-about'">About Us</div>
-    <div class="nav-link" [ngx-scroll-to]="'#home-page-contact-us'">Contact Us</div>
-</div>
+<ul class="flex-container" [ngClass]='visibleState ? "shown":"hidden"'>
+    <li class="nav-link" >
+        <a [ngx-scroll-to]="'#home-page-offers'">
+            Solutions
+        </a>
+    </li>
+    <li class="nav-link" >
+        <a  [ngx-scroll-to]="'#home-page-features'">
+            Features
+        </a>
+    </li>
+    <li class="nav-link">
+        <a>
+            Explorer
+        </a>
+    </li>
+    <li class="nav-link">
+        <a>
+            Blog
+        </a>
+    </li>
+    <li class="nav-link" >
+        <a [ngx-scroll-to]="'#home-page-about'">
+            About Us
+        </a>
+    </li>
+    <li class="nav-link" >
+        <a [ngx-scroll-to]="'#home-page-contact-us'">
+            Contact Us
+        </a>
+    </li>
+</ul>
