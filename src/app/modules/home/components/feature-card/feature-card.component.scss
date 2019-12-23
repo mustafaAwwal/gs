@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     position: relative;
     height: 210px;
+    width: 310px;
+    margin-bottom: 50px;
 }
 .image-area {
     z-index: 104;
@@ -56,6 +58,8 @@
     }
     .card-container {
         height: 160px;
+        width: 250px;
+        transition: 400ms !important;
     }
 }
 @media only screen and (max-width:992px) {

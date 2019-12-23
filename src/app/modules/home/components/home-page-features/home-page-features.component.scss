@@ -22,16 +22,14 @@ h1.heading {
     flex-flow: row wrap;
     justify-content: center;
     .card-item {
-        flex: 0 1 18%;
+        flex: 0 1 auto;
         margin-bottom: 60px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
     }
 }
-@media only screen and (max-width: 1280px) {
-    .card-item {
-        flex: 0 1 22% !important;
-        transition: 400ms;
-    }
-}
+
 @media only screen and (max-width: 992px) {
     .card-item {
         flex: 0 1 50% !important;
